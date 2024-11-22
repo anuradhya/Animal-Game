@@ -12,6 +12,26 @@ animals. If the player made the correct choice, the result shows win otherwise l
 - Displays **WIN** or **LOSE** based on selection.
 - Refesh the page to restart the game.
 - 
+=======
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Maleesha2001-malee/IT3133-Assesment_04.git
+   cd animal-matching-game
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the app:
+   ```bash
+   npm start
+   ```
+4. Open the app in your browser: http://localhost:3000
+
 ---
 
 ## Components
@@ -28,9 +48,4 @@ animals. If the player made the correct choice, the result shows win otherwise l
 - **JavaScript**
 
 ---
-## Topics
-This project covers the following topics:
-- **React-based game development.**
-- **State management in React.**
-- **Dynamic rendering of components.**
-- **Styling with CSS.**
+
