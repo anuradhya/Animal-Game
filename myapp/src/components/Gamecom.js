@@ -1,6 +1,6 @@
 import {useState} from "react";
 import animals from "../AnimalsDb";
-import "../assets/gamecom.css";
+import "../assets/css/gamecom.css";
 
 export default function Gamecom(){
     const [targetAnimal,setTargetAnimal]=useState(getRandomAnimal());
