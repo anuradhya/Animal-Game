@@ -1,70 +1,133 @@
-.game-page {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-wrapper {
+  width: 100%;
+  height: 100vh;
+}
+
+.header {
   
-  .game-header {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #4caf50;
-  }
+  border:3px solid orange ;
+  color: black;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
   
-  .animal-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
-  }
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, sans-serif;
+  gap: 10px; 
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border:3px solid orange ;
+}
+
+.result-column {
+  background-color: white;
+  color:orange;
+  font-size:16px;
+  max-width:20%;
   
-  .animal-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
+}
+
+.result-text {
+  color: orange;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.name-column {
+  color:orange;
+  font-size:16px;
+  max-width:30%;
+}
+
+.animal-name {
+  color: orange;
+  font-size: 8px;
+  font-weight: bold;
+}
+
+.animal-grid
+{
+   background-color: rgb(97, 167, 241); 
   
-  .animal-card img {
-    width: 100%;
-    border-radius: 8px;
+}
+
+.animal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0; 
+  padding:30px;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.animal-card {
+  border: 2px solid transparent;
+  padding:20px;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.animal-card:hover {
+  transform: scale(1.1);
+  border: 2px solid orange;
+  border-color: orange;
+}
+
+
+.image{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.animal-grid-header{
+  background-color: white;
+  padding:5px;
+  color:black;
+  width:100%;
+  padding: 15px;
+  margin: 0;
+ 
+ 
+}
+
+ .grid-column{
+  max-width:50%;
+  background-color: #d6e4f0; 
+  padding: 0; 
+  margin: 0;
   }
-  
-  .animal-card p {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .animal-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .result {
-    background-color: #f8f8f8;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-  }
-  
-  .result h2 {
-    color: #4caf50;
-    font-size: 1.8rem;
-  }
-  
-  .result button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s ease;
-  }
-  
-  .result button:hover {
-    background-color: #45a049;
-  }
+
+ .card {
+  border: 3px solid transparent; 
+  padding: 10px;
+  background: white;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s; 
+  width:75%;
+  height:75%;
+  padding-left: 10px;
+ }
+
+.card:hover {
+  border-color: orange; 
+  transform: scale(1.05); 
+}

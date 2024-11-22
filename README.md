@@ -34,4 +34,3 @@ This project covers the following topics:
 - **State management in React.**
 - **Dynamic rendering of components.**
 - **Styling with CSS.**
-
