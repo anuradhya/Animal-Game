@@ -55,7 +55,7 @@ export default function Game() {
                 onClick={() => handleAnimalClick(animal)}
               >
                 <img
-                  src={require(`../assets/img/${animal.image}`)}
+                  src={require(`../assets/img/${animal.img}`)}
                   alt={animal.name}
                   className="image"
                 />
