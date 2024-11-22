@@ -50,7 +50,9 @@ export default function Gamecom(){
                             key={animal.id}
                             className="animal-card"
                             onClick={()=>handleAnimalClick(animal.id)}>
-                                <img src={animal.img} alt={animal.name}/>
+                                <img
+                                src={require(`../assets/img/${animal.img}`)}
+                                />
                         </div>
                     ))}
                 </div>
