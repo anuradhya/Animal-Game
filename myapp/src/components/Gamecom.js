@@ -40,8 +40,22 @@ export default function Gamecom(){
                         </div>
                     )}
                 </div>
+
+                <div className="game-header">
+                    <h2>Animal Name: {targetAnimal.name}</h2>
+                </div>
+                <div className="animal-grid">
+                    {animals.map((animal)=>(
+                        <div
+                            key={animal.id}
+                            className="animal-card"
+                            onClick={()=>handleAnimalClick(animal.id)}>
+                                <img src={animal.img} alt={animal.name}/>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
         </>
-    )
+    );
 }
