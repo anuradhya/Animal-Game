@@ -44,7 +44,6 @@ export default function Game() {
           {targetAnimal ? targetAnimal.name.toUpperCase() : "Loading..."}
         </div>
 
-
         <div className="column grid-column">
           <div className="animal-grid-header"><h2>Select the Animal</h2></div>
           <div className="animal-grid">

@@ -47,5 +47,4 @@ animals. If the player made the correct choice, the result shows win otherwise l
 - **CSS**
 - **JavaScript**
 
----
 
